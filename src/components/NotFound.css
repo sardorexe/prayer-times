@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container div img {
+    width: 100%;
+    color: #fff;
+}
+
+.container .box-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.container .box-content .first-text {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 43px;
+}
+
+.container .box-content .second-text {
+    color: rgba(255, 255, 255, 0.616);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.second-text a {
+    color: rgba(255, 255, 255, 0.616);
+}
+
+a:hover {
+    color: rgb(102, 102, 250);
+}
+

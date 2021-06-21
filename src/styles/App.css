@@ -69,3 +69,7 @@ body {
 .footer a {
   color: #fff;
 }
+
+.footer a:hover {
+  color: rgb(102, 102, 250);
+}

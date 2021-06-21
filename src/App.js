@@ -13,6 +13,7 @@ import Namangan from "./Pages/Namangan";
 import Qashqadaryo from "./Pages/Qashqadaryo";
 import Surxandaryo from "./Pages/Surxandaryo";
 import Samarqand from "./Pages/Samarqand";
+import NotFound from "./components/NotFound";
 import "./styles/App.css";
 import "./styles/Responsive.css";
 
@@ -25,18 +26,19 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={Main} />
-          <Route path="/tashkent" component={Toshkent} />
-          <Route path="/xarezm" component={Xorazm} />
-          <Route path="/andijan" component={Andijon} />
-          <Route path="/jizzakh" component={Jizzax} />
-          <Route path="/navaiy" component={Navoiy} />
-          <Route path="/bukhara" component={Buxoro} />
-          <Route path="/ferghana" component={Fargona} />
-          <Route path="/samarkand" component={Samarqand} />
-          <Route path="/namangan" component={Namangan} />
-          <Route path="/qashqadaryo" component={Qashqadaryo} />
-          <Route path="/sirdaryo" component={Sirdaryo} />
-          <Route path="/surxandaryo" component={Surxandaryo} />
+          <Route exact path="/tashkent" component={Toshkent} />
+          <Route exact path="/xarezm" component={Xorazm} />
+          <Route exact path="/andijan" component={Andijon} />
+          <Route exact path="/jizzakh" component={Jizzax} />
+          <Route exact path="/navaiy" component={Navoiy} />
+          <Route exact path="/bukhara" component={Buxoro} />
+          <Route exact path="/ferghana" component={Fargona} />
+          <Route exact path="/samarkand" component={Samarqand} />
+          <Route exact path="/namangan" component={Namangan} />
+          <Route exact path="/qashqadaryo" component={Qashqadaryo} />
+          <Route exact path="/sirdaryo" component={Sirdaryo} />
+          <Route exact path="/surxandaryo" component={Surxandaryo} />
+          <Route component={NotFound} />
         </Switch>
       </Router>
       <footer className="footer">
