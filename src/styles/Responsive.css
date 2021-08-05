@@ -1,7 +1,13 @@
 @media (max-width: 768px) {
-    .container .row {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .container .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .row .col-sm-12 .box h3 {
+      font-size: 18px;
+  }
+  .container .row .col-sm-12 .box span {
+      font-size: 18px;
+  }
 }

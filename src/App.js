@@ -27,22 +27,22 @@ function App() {
         <Switch>
           <Route exact path="/" component={Main} />
           <Route exact path="/tashkent" component={Toshkent} />
-          <Route exact path="/xarezm" component={Xorazm} />
           <Route exact path="/andijan" component={Andijon} />
-          <Route exact path="/jizzakh" component={Jizzax} />
+          <Route exact path="/xarezm" component={Xorazm} />
           <Route exact path="/navaiy" component={Navoiy} />
-          <Route exact path="/bukhara" component={Buxoro} />
+          <Route exact path="/jizzakh" component={Jizzax} />
           <Route exact path="/ferghana" component={Fargona} />
-          <Route exact path="/samarkand" component={Samarqand} />
+          <Route exact path="/bukhara" component={Buxoro} />
           <Route exact path="/namangan" component={Namangan} />
-          <Route exact path="/qashqadaryo" component={Qashqadaryo} />
+          <Route exact path="/samarkand" component={Samarqand} />
           <Route exact path="/sirdaryo" component={Sirdaryo} />
+          <Route exact path="/qashqadaryo" component={Qashqadaryo} />
           <Route exact path="/surxandaryo" component={Surxandaryo} />
           <Route component={NotFound} />
         </Switch>
       </Router>
       <footer className="footer">
-        <span>&copy; Dasturchi: <a href="https://instagram.com/sardor_insane">Sardor</a></span>
+        <span>&copy; Dasturchi: <a href="https://instagram.com/s_aminoff">Sardor</a></span>
       </footer>
     </>
   );

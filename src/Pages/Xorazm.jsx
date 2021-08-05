@@ -1,30 +1,30 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import HijriDate from "../components/HijriDate";
 import Loading from "../components/Loading";
 
 function Xorazm() {
-    const [timings, setTimings] = useState([])
-    const [loading, setLoading] = useState(true)
-    useEffect(() => {
-        const getData = () => {
-          fetch(
-            "https://api.aladhan.com/v1/timingsByCity?city=Urganch&country=Uzbekistan&method=3&school=1"
-          )
-            .then((res) => {
-              return res.json();
-            })
-            .then((data) => {
-              setTimings(data.data.timings);
-            });
-        };
-        getData();
-        setTimeout(() => {
-          setLoading(false);
-        }, 3000);
-      }, []);
-      if (loading) {
-          return <Loading />
-      }
+  const [timings, setTimings] = useState([]);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    const getData = () => {
+      fetch(
+        "https://api.aladhan.com/v1/timingsByCity?city=Urganch&country=Uzbekistan&method=3&school=1"
+      )
+        .then((res) => {
+          return res.json();
+        })
+        .then((data) => {
+          setTimings(data.data.timings);
+        });
+    };
+    getData();
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  }, []);
+  if (loading) {
+    return <Loading />;
+  }
   return (
     <div className="container">
       <HijriDate />
